@@ -1,11 +1,11 @@
 // infos
-let preço, quantidade
+let preco, quantidade
 let valorTotal
 //leituras
-quantidade = Number(prompt("Quantidade"))
-preco = Number(prompt("Preço:"))
-valorTotal = quantidade * preco
+quantidade = Number(prompt("Quantidade:"))
+preco = Number(prompt("Preco:"))
+valorTotal = quantidade*preco
 //proc
 
 //saidas
-console.log("Valor a receber: R$" + valorTotal)
+alert("Valor a receber: R$" + valorTotal)
