@@ -8,4 +8,4 @@ valorTotal = quantidade*preco
 //proc
 
 //saidas
-alert("Valor a receber: R$" + valorTotal)
+alert("Valor a receber: R$" + valorTotal.toFixed(2))
