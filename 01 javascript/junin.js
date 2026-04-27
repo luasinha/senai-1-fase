@@ -4,7 +4,7 @@ let salario, dias, salariodias
 
 // entradas
 
-salario = Number(prompt("salario: "))
+salario = Number(prompt("salário: "))
 dias = Number(prompt("dias trabalhados: "))
 
 //processamentos
@@ -13,4 +13,4 @@ salariodias = salario / dias
 
 //saidas
 
-alert("salario por dia: R$" + salariodias.toFixed(2))
+alert("salário por dia: R$" + salariodias.toFixed(2))

@@ -1,7 +1,7 @@
 let vitorias,empates
 let pontos
 //leituras
-vitorias = prompt("vitorias:")
+vitorias = prompt("vitórias:")
 vitorias = Number(vitorias)
 empates = Number(prompt("empates:"))
 //processamentos

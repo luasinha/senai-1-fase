@@ -3,7 +3,7 @@ let preco, quantidade
 let valorTotal
 //leituras
 quantidade = Number(prompt("Quantidade:"))
-preco = Number(prompt("Preco:"))
+preco = Number(prompt("Preço:"))
 valorTotal = quantidade*preco
 //proc
 
