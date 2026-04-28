@@ -7,4 +7,4 @@ devspj = Number(prompt("qual a quantidade de devs? "))
 
 total = clts + estagiarios + devspj
 
-alert("O total de devs na equipe do RH é: " + total)
+console.log("O total de devs na equipe do RH é: " + total)

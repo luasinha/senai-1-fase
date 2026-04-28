@@ -6,4 +6,4 @@ quantidadeFinal = prompt("quantas laranjas sobraram? ")
 
 vendidas = quantidadeInicial - quantidadeFinal
 
-alert("quantidade de laranjas vendidas: " + vendidas)
+console.log("quantidade de laranjas vendidas: " + vendidas)

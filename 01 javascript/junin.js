@@ -13,4 +13,4 @@ salariodias = salario / dias
 
 //saidas
 
-alert("salário por dia: R$" + salariodias.toFixed(2))
+console.log("salário por dia: R$" + salariodias.toFixed(2))

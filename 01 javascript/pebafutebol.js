@@ -7,4 +7,4 @@ empates = Number(prompt("empates:"))
 //processamentos
 pontos = vitorias*3 + empates
 //saida
-alert("total de pontos: " + pontos)
+console.log("total de pontos: " + pontos)
