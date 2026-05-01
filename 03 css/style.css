@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(252, 176, 195);
+    color: hsl(32, 57%, 29%);
+    text-align: center;
+}
+h1{
+    border: 1px, solid, hsl(36, 93%, 27%);
+}
+
+output{
+    color:  hsl(32, 57%, 29%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+}
+button{
+    background-color: #fde3c2;
+    color: hsl(32, 57%, 29%);
+    padding: 6px;
+    border: 1px, solid,#79004a;
+    font-size: large;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#resultado{
+    background-color: rgb(252, 176, 195);
+}
+#botao1{
+    background-color: #f884a7;
+}
+#botao1:hover{
+    background-color: hwb(345 51% 11%);
+}
+#botao2{
+    background-color: #fde3c2;
+}
+#botao2:hover{
+    background-color: lch(83.99% 19.73 74.89);
+}
+#botao3{
+    background-color: oklab(61.419999999999995% 0.03288 0.08415);
+}
+#botao3:hover{
+    background-color: #c99e6d;
+}
+
+.botoes{
+    border: 1px, solid, rgb(252, 176, 195);
+}
