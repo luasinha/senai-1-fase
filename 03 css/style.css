@@ -3,6 +3,7 @@ body{
     color: hsl(32, 57%, 29%);
     text-align: center;
 }
+
 h1{
     border: 1px, solid, hsl(36, 93%, 27%);
 }
@@ -14,6 +15,12 @@ output{
     text-align: center;
     font-weight: 600;
 }
+
+#resultado{
+    background-color: rgb(252, 176, 195);
+}
+
+
 button{
     background-color: #fde3c2;
     color: hsl(32, 57%, 29%);
@@ -24,9 +31,6 @@ button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#resultado{
-    background-color: rgb(252, 176, 195);
-}
 #botao1{
     background-color: #f884a7;
 }
