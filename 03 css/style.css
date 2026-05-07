@@ -67,6 +67,12 @@ button{
 #botao6:hover{
     background-color: hwb(345 51% 11%);
 }
+#botao7{
+    background-color: #f884a7;
+}
+#botao7:hover{
+    background-color: hwb(345 51% 11%);
+}
 .botoes{
     border: 1px, solid, rgb(252, 176, 195);
 }

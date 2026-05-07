@@ -1,5 +1,21 @@
 let resposta = document.getElementById('resultado')
 
+function revelarRecreio(){
+    document.getElementById('resultado').innerHTML =
+    '<br>Início: 20:30' + 
+    '<br>Fim: 20:45' + 
+    '<br>Chamada: 20:50'
+}
+
+function calcularParImpar(){
+    let n = Number(prompt("digite um numero:"))
+    if(n%2 == 0){
+        alert("par")
+    }else{
+        alert("ímpar")
+    }
+}
+
 function mostrarDiaDaSemana(){
     // infos
     let numero, dia
