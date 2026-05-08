@@ -14,17 +14,16 @@ function verificarMeta(){
     lucro = totalBruto - premiacoes - presentes - comissoes
     let mensagem = ''
     if(lucro >= meta){
-        mensagem = "Batemos a meta, lucro de R$" + lucro.toFixed(2).replace(".",",")
+            mensagem = 'Batemos a meta, lucro de R$' + lucro.toFixed(2).replace('.','.')
     }else{
         if(lucro > 0){
-            mensagem = "Não batemos a meta, mas tivemos lucro de R$" + lucro.toFixed(2).replace(".",",")
+            mensagem = 'Não batemos a meta, mas tivemos lucro de R$' + lucro.toFixed(2).replace('.','.')
         }else{
             let prejuizo = lucro * -1
-            mensagem = "Não batemos a meta e ainda tivemos prejuízo de R$" + prejuizo.toFixed(2).replace(".",",")
+            mensagem = 'Não batemos a meta e ainda tivemos prejuízo de R$' + prejuizo.toFixed(2).replace('.','.')
         }
     }
-    resposta.innerHTML = "<br>Lucro de hoje: R$" + lucro.toFixed(2).replace(".",",") + 
-    '<br>' + mensagem
+    resposta.innerHTML = '<br>Lucro de hoje: R$' + lucro.toFixed(2).replace('.','.') + '<br>' + mensagem
 
     // let ponto = '.'
     // let virgula = ','
