@@ -1,5 +1,37 @@
 let resposta = document.getElementById('resultado')
 
+function verificarMeta(){
+   
+    let totalBruto, premiacoes, presentes, comissoes, lucro
+    let meta
+    
+    totalBruto = Number(prompt("Total bruto: "))
+    premiacoes = Number(prompt("Premiações: "))
+    presentes = Number(prompt("Presentinhos: "))
+    comissoes = Number(prompt("Comissões: "))
+    meta = Number(prompt("Meta de hoje:"))
+   
+    lucro = totalBruto - premiacoes - presentes - comissoes
+    let mensagem = ''
+    if(lucro >= meta){
+        mensagem = "Batemos a meta, lucro de R$" + lucro.toFixed(2).replace(".",",")
+    }else{
+        if(lucro > 0){
+            mensagem = "Não batemos a meta, mas tivemos lucro de R$" + lucro.toFixed(2).replace(".",",")
+        }else{
+            let prejuizo = lucro * -1
+            mensagem = "Não batemos a meta e ainda tivemos prejuízo de R$" + prejuizo.toFixed(2).replace(".",",")
+        }
+    }
+    resposta.innerHTML = "<br>Lucro de hoje: R$" + lucro.toFixed(2).replace(".",",") + 
+    '<br>' + mensagem
+
+    // let ponto = '.'
+    // let virgula = ','
+    // resposta.innerHTML = "Lucro de hoje: R$" + 
+    // lucro.toFixed(2).replace(prompt("Digita o ponto aí pra mim"),prompt("E a vírgula?"))
+}
+
 function revelarRecreio(){
     document.getElementById('resultado').innerHTML =
     '<br>Início: 20:30' + 
