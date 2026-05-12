@@ -34,11 +34,11 @@ button{
     background-color: oklab(90.865% -0.12928 0.00415);
 }
 #botao1:hover{
-    background-color: rgb(71, 197, 172);
+    background-color: #61d8c0;
 }
 #botao2{
     background-color: oklab(90.865% -0.12928 0.00415);
 }
 #botao2:hover{
-    background-color: rgb(71, 197, 172);
+    background-color: #61d8c0;
 }
