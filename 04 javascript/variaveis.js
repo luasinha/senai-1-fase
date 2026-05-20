@@ -1,53 +1,85 @@
+let numero_aleatorio
 let total = 0
-function registrarVenda(){
-    let valor = Number(document.getElementById('inputVenda').value)
-    // registrar venda no total
+
+ function dado_d4(){
+     numero_aleatorio = Number(Math.ceil(Math.random() * 4))
+
+     total = total + numero_aleatorio
+
+    document.getElementById("resultado_soma_dados").innerHTML = total
+    document.getElementById("lista_dados").innerHTML += numero_aleatorio + "<br>"
+
+ }
+
+ function dado_d6(){
+    let resultado = Math.ceil(Math.random()*6)
+    
+}
+
+function dado_d10(){
+    let resultado = Math.ceil(Math.random()*6)
+    
+ }
+
+
+function registrar_venda(){
+    let valor = Number(document.getElementById("input_valor").value)
+
     total = total + valor
-    // atualizar total na página
-    document.getElementById('totalVendido').innerHTML =  'Total de vendas: R$' + total.toFixed(2)
-    document.getElementById('inputVenda').value = ''
-    document.getElementById('inputVenda').focus()
 
-    console.log(valor)
-}
-let cont = 0
-function incrementarContagem(){
-    // cont = cont + 1
-    // cont += 1
-    cont++
-    document.getElementById('p-contagem').innerHTML = cont
+    document.getElementById("total_vendido").innerHTML = ("Total de vendas: R$" + total.toFixed(2).replace(".",","))
+    document.getElementById("lista_valor").innerHTML += ("" + valor.toFixed(2).replace(".",",")) + "<br>"
+
+    document.getElementById("input_valor").value = ""
+    document.getElementById("input_valor").focus()
+    
 }
 
-function decrementarContagem(){
-    cont--
-    document.getElementById('p-contagem').innerHTML = cont
+function zerarTabela(){
+    cont = 0
+    document.getElementById("total_vendido").innerHTML = cont.toFixed(2)
 }
-function somar10(){
+
+cont = 0
+
+function incrementar_contagem(){
+    cont ++
+
+    document.getElementById("p-contagem").innerHTML = cont
+}
+
+function decrementar_contagem(){
+    cont --
+    document.getElementById("p-contagem").innerHTML = cont
+
+}
+
+function somar_10(){
     cont = cont + 10
-    // cont += 10
-    document.getElementById('p-contagem').innerHTML = cont
+    document.getElementById("p-contagem").innerHTML = cont
+
 }
-function somar2(){
-    cont += 2
-    document.getElementById('p-contagem').innerHTML = cont
+
+function somar_2(){
+    cont = cont + 2
+    document.getElementById("p-contagem").innerHTML = cont
+
 }
+
 function zerarContagem(){
     cont = 0
-    document.getElementById('p-contagem').innerHTML = cont
+    document.getElementById("p-contagem").innerHTML = cont
+
 }
 
-let global = 'Eu sou uma variável global :/'
+let global = "Eu sou uma variável global"
 function funcao1(){
-    let local = 'Sou uma variável local :D'
-    // let global = 'ME identifico como global'
-    console.log(local);
-    console.log(global);
+    let local = "Eu sou uma variável local"
+    console.log(local)
+    console.log(global)
 }
 function funcao2(){
-    // let local
-    console.log(global);
-    // console.log(local);
-}
+    console.log(global)
+    // console.log(local)
 
-// funcao1()
-// funcao2()
+}
