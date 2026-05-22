@@ -4,52 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>var</title>
-</head>
-<body>
-    
-    <h1>Variáveis</h1>
-    <hr>
-    <h2>Soma de diferentes dados:</h2>
-
-    <output id="resultado_soma_dados"></output>
-
-    <button onclick="dado_d4()">Rolar D4</button>
-    <button onclick="dado_d6()">Rolar D6</button>
-    <button onclick="dado_d10()">Rolar D10</button>
-    <button onclick="dado_d12()">Rolar D12</button>
-    
-    <div id="lista_dados">
-
-    </div>
-
-    <hr>
-
-    <h2>Vendas na Harry Ploter</h2>
-    <p id="total_vendido"> Total de vendas: R$0,00</p>
-    <label for=""></label>
-    <input id="input_valor" type="text">
-    <button onclick="registrar_venda()">Cadastrar</button>
-    <p id="p_total_vendido"></p>
-    <div id="lista_valor">
-        
-    </div>
-    <button onclick="zerarTabela()">Limpar</button>
-    <hr>
-
+    <title>Var</title>
+    </head>
+    <body>
+    <h1>Variaveis</h1>
     emmet vs code
     <hr>
-    <button onclick="incrementar_contagem()">+</button>
-    <button onclick="somar_10()">somar 10</button>
-    <button onclick="somar_2()">somar 2</button>
-    <button onclick="zerarContagem()">zerar contagem</button>
-       <p id="p-contagem">
-           0
-        </p>
+    <button onclick="implementarContagem()">+</button>
+    <button onclick="diminuirContagem()">-</button>
+    <button onclick="resetContagem()">RESETAR</button>
+    <p id="p-contagem">0</p>
 
-        
-    <button onclick="decrementar_contagem()">-</button>
     <hr>
+    <h2>Vendas Harry Ploter</h2>  
+    <p id="totalVendido">Total de vendas: R$0,00</p>
+    Valor da venda R$  
+    <input id="inputVenda" type="text">
+    <button onclick="registrarVenda()">Cadastrar</button>
+    <p id="p-totalVendido"></p>
+    <div id="listaVendas"></div>
+    
+    <hr>
+    <h2>Copo de Dados</h2>
+    <button onclick="rolarDadosd4()">Dados D4</button>
+    <button onclick="rolarDadosd6()">Dados D6</button>
+    <button onclick="rolarDadosd10()">Dados D10</button>
+    <button onclick="rolarDadosd12()">Dados D12</button>
+    <button onclick="resetDados()">RESETAR</button>
+    <p id="dados">Valor do dado:</p>
+    <output id="numeroDado"></output>
+    <p id="totalDados"></p>
+    <div id="listaDados"></div>
+     <hr>
+     <h2>Jogo do Dino</h2>
+     <p id="valorRecebido"></p>
+     <input type="text" name="" id="valorDaAposta">
+     <button onclick="registrarAposta()">Apostar</button>
+     <button onclick="botaoespino()">Espinossauro</button>
+     <button>T-rex</button>
+     <button>Braquiossauro</button>
+     <button>Velocirraptor</button>
+     <button>Estegossauro</button>
+     <button>Triceratops</button>
+     <button>Anquilossauro</button>
+     <button>Parassaurolofo</button>
+     <button>Alossauro</button>
+     <button>Carnotauro</button>
+
+
     <script src="variaveis.js"></script>
 </body>
 </html>

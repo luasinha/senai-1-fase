@@ -1,85 +1,89 @@
-let numero_aleatorio
-let total = 0
-
- function dado_d4(){
-     numero_aleatorio = Number(Math.ceil(Math.random() * 4))
-
-     total = total + numero_aleatorio
-
-    document.getElementById("resultado_soma_dados").innerHTML = total
-    document.getElementById("lista_dados").innerHTML += numero_aleatorio + "<br>"
-
- }
-
- function dado_d6(){
-    let resultado = Math.ceil(Math.random()*6)
-    
+let cont = 0
+function implementarContagem(){
+    //cont = cont + 1
+    //cont += 1
+cont++
+document.getElementById('p-contagem').innerHTML = cont
 }
 
-function dado_d10(){
-    let resultado = Math.ceil(Math.random()*6)
-    
- }
+function diminuirContagem(){
+    //cont = cont - 1
+    //cont -= 1
+cont--
+document.getElementById('p-contagem').innerHTML = cont
+}
 
+function resetContagem(){
+window.location.reload()
+// cont = 0
+// document.getElementById('p-contagem').innerHTML = cont
 
-function registrar_venda(){
-    let valor = Number(document.getElementById("input_valor").value)
+}
 
+    //Valor da venda R$  
+    let total = 0
+    function registrarVenda(){
+    let valor = Number(document.getElementById('inputVenda').value)
+    //registrar venda no total
     total = total + valor
-
-    document.getElementById("total_vendido").innerHTML = ("Total de vendas: R$" + total.toFixed(2).replace(".",","))
-    document.getElementById("lista_valor").innerHTML += ("" + valor.toFixed(2).replace(".",",")) + "<br>"
-
-    document.getElementById("input_valor").value = ""
-    document.getElementById("input_valor").focus()
-    
-}
-
-function zerarTabela(){
-    cont = 0
-    document.getElementById("total_vendido").innerHTML = cont.toFixed(2)
-}
-
-cont = 0
-
-function incrementar_contagem(){
-    cont ++
-
-    document.getElementById("p-contagem").innerHTML = cont
-}
-
-function decrementar_contagem(){
-    cont --
-    document.getElementById("p-contagem").innerHTML = cont
+    //atualizar total na página
+    document.getElementById('totalVendido').innerHTML = 'Total de vendas: R$' + total.toFixed(2) 
+    //lista de vendas
+    document.getElementById('listaVendas').innerHTML += 'R$' + valor.toFixed(2) + '<br>'
+    document.getElementById('inputVenda').value = ''
+    document.getElementById('inputVenda').focus()
+    console.log(valor)
 
 }
 
-function somar_10(){
-    cont = cont + 10
-    document.getElementById("p-contagem").innerHTML = cont
-
+let numeroDado, numeroAleatorio, resultadoGlobal = 0
+    numeroDado = document.getElementById('numeroDado')
+    function rolarDadosd4(){
+    numeroAleatorio = Number(Math.ceil(Math.random() * 4))
+    numeroDado.innerHTML = numeroAleatorio
+    resultadoGlobal = resultadoGlobal + numeroAleatorio
+    document.getElementById('listaDados').innerHTML += 'Lista de dados: ' + numeroAleatorio.toFixed(2) + '<br>'
+    document.getElementById('totalDados').innerHTML = 'Total de dados: ' + resultadoGlobal.toFixed(2)
+    console.log(numeroDado)
+}
+    function rolarDadosd6(){
+    numeroAleatorio = Number(Math.ceil(Math.random() * 6))
+    numeroDado.innerHTML = numeroAleatorio
+    resultadoGlobal = resultadoGlobal + numeroAleatorio
+    document.getElementById('listaDados').innerHTML += 'Lista de dados: ' + numeroAleatorio.toFixed(2) + '<br>'
+    document.getElementById('totalDados').innerHTML = 'Total de dados: ' + resultadoGlobal.toFixed(2)
+    console.log(numeroDado)
+}
+    function rolarDadosd10(){
+    numeroAleatorio = Number(Math.ceil(Math.random() * 10))
+    numeroDado.innerHTML = numeroAleatorio
+    resultadoGlobal = resultadoGlobal + numeroAleatorio
+    document.getElementById('listaDados').innerHTML += 'Lista de dados: ' + numeroAleatorio.toFixed(2) + '<br>'
+    document.getElementById('totalDados').innerHTML = 'Total de dados: ' + resultadoGlobal.toFixed(2)
+    console.log(numeroDado)
+}
+ function rolarDadosd12(){
+    numeroAleatorio = Number(Math.ceil(Math.random() * 12))
+    numeroDado.innerHTML = numeroAleatorio
+    resultadoGlobal = resultadoGlobal + numeroAleatorio
+    document.getElementById('listaDados').innerHTML += 'Lista de dados: ' + numeroAleatorio.toFixed(2) + '<br>'
+    document.getElementById('totalDados').innerHTML = 'Total de dados: ' + resultadoGlobal.toFixed(2)
+    console.log(numeroDado)
+}
+function resetDados(){
+window.location.reload()
 }
 
-function somar_2(){
-    cont = cont + 2
-    document.getElementById("p-contagem").innerHTML = cont
+let valorDaAposta = Number(document.getElementById('valorDaAposta').value)
+let numeroAleatorioDino
+function registrarAposta(){
+numeroAleatorioDino = Number(Math.ceil(Math.random()*1))
 
+console.log(numeroAleatorioDino)
 }
-
-function zerarContagem(){
-    cont = 0
-    document.getElementById("p-contagem").innerHTML = cont
-
-}
-
-let global = "Eu sou uma variável global"
-function funcao1(){
-    let local = "Eu sou uma variável local"
-    console.log(local)
-    console.log(global)
-}
-function funcao2(){
-    console.log(global)
-    // console.log(local)
-
+function botaoespino(){
+    if (numeroAleatorioDino == 1){
+        valorDaAposta = valorDaAposta * 2
+        document.getElementById('valorRecebido').innerHTML = 'valor a receber' + valorDaAposta
+    }
 }
