@@ -27,7 +27,6 @@ button{
     font-size: large;
     font-weight:600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
 }
 button:hover{
     background-color: hwb(180 42% 17%);
