@@ -9,9 +9,9 @@ escolha = prompt("Roque já tem a Jota Qwert confirmada e" +
  "elas vão tocar pela internet." +
  "Quanto mais 50 toalhas de crochê. Roque deve falar a" +
  "verdade ou mentir que tem camarim e as toalhas." +
-  "\nVerdade: 02  \nMentir: 03")
+  "\nVerdade: 2  \nMentir: 3")
     
-if(escolha == "02" || escolha == "2"){
+if(escolha == "2"){
 escolha = prompt("Roque contou para  as Tias Fofinhas que o evento ainda está engatinhando e" +
  "não temos camarins ou mesmo verba para comprar toalhas de crochê, infelizmente." +
  "Elas ficaram tristes pela dura realidade dos músicos, mas apreciaram a sinceridade." +
@@ -22,9 +22,9 @@ escolha = prompt("Roque contou para  as Tias Fofinhas que o evento ainda está e
  "adição para este evento. Roque foi falar com eles, Yasmina pediu que o grupo fosse" +
  "marcado em todas as fotos postadas de divulgação do evento, assim eles poderiam atrair" + 
  "seu público para o evento. Roque deve aceitar ou rejeitar essa exigência?" +
- "\nAceitar: 04 \nRejeitar: 05")
+ "\nAceitar: 4 \nRejeitar: 5")
 
-if(escolha == "03" || escolha == "3"){
+if(escolha == "3"){
 escolha = prompt("Roque mente para as Tias Fofinhas que tem as toalhas."+
  "Elas perguntam de que cor são, ele diz que são brancas" +
  "(afinal todas as toalhas de crochê são brancas, não é?)."+ 
@@ -43,10 +43,10 @@ escolha = prompt("Roque mente para as Tias Fofinhas que tem as toalhas."+
  "Ao mesmo tempo, ficou balançado porque esse contrato seria a" +
  "chance de realizar o maior sonho da sua vida!"+
  "Roque deve assinar o contrato?"+
- "\nSim: 07 \nNão: 06")
+ "\nSim: 6 \nNão: 7")
 }
 
-if(escolha == "04" || escolha == "4"){
+if(escolha == "4"){
 escolha = prompt("Roque aceita e marca Yasmina e os Manos em todas as postagens e o" +
  "efeito é assustadoramente bom! O evento viraliza e todo mundo fica sabendo." +
  "Muita audiência, mas muita responsabilidade!" +
@@ -56,10 +56,10 @@ escolha = prompt("Roque aceita e marca Yasmina e os Manos em todas as postagens 
  "As músicas deles são muito relaxantes e Roque ficou receoso que" +
  "colocasse o público para dormir."+
  "Roque deve aceitar Horrível Trio?"+
- "\nSim: 08 \nNão: 09")
+ "\nSim: 8 \nNão: 9")
 }
 
-if(escolha == "05" || escolha == "5"){
+if(escolha == "5"){
 alert("Roque não entende a intenção de Yasmina," +
  "fica receoso e acaba rejeitando a proposta." +
  "Por conta desta decisão o Rock in Reels não viraliza." + 
@@ -68,7 +68,7 @@ alert("Roque não entende a intenção de Yasmina," +
  "Fim.")
 }
 
-if(escolha == "06" || escolha == "6"){
+if(escolha == "6"){
 alert("Roque lutou a vida inteira, tocando músicas que não gostava" +
  "para poder alcançar seu próprio sucesso sem que ninguém pudesse"+ 
  "jogar em sua cara que ele só chegou lá por causa do seu pai."+
@@ -87,14 +87,14 @@ alert("Roque lutou a vida inteira, tocando músicas que não gostava" +
  "Fim.")
 }
 
-if(escolha == "07" || escolha == "7"){
+if(escolha == "7"){
 alert("Roque coloca o orgulho de lado e se dobra à proposta de seu pai,"+ 
  "assina o contrato e consegue o financiamento para a realização do evento."+ 
  "O festival atinge um sucesso gigantesco, porém somente no submundo da música."+
  "Fim.")
 }
 
-if(escolha == "08" || escolha == "8"){
+if( escolha == "8"){
 escolha = prompt("Roque decide arriscar aceitando a desconhecida banda Horrível Trio e o" + 
  "resultado foi maravilhoso. A música é realmente relaxante mas não tediosa e" +
  "os músicos são muito virtuosos!" +
@@ -109,7 +109,7 @@ escolha = prompt("Roque decide arriscar aceitando a desconhecida banda Horrível
  "\nSim: 10 \nNão: 11")
 }
 
-if(escolha == "09" || escolha == "9"){
+if(escolha == "9"){
 alert("Roque resolve não arriscar e não inclui a Horrível Trio no evento."+ 
  "O evento tem alguma relavância por conta do alcance e" +
  "engajamento das redes de Yasmina mas nunca decola completamente."+
@@ -136,7 +136,8 @@ alert("Roque nega a proposta da amazonia porque não quer virar as"+
  "completa como em partes e shorts, tudo vira um grande sucesso e os"+ 
  "contatos para uma nova edição já estão fervendo!"+
  "Fim.")
-        }
+}
+
 }else{
 alert("Erro! por favor tente novamente.")
  }

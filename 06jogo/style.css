@@ -2,18 +2,17 @@ body{
     background-color: hsl(167, 84%, 83%);
     color: hwb(327 25% 34%);
     text-align: center;
+    font-size: larger;
 }
 
-h1{
-    border: 1px, solid, hsl(0, 0%, 0%);
+h2{
+    font-size: xx-large;
 }
 
 output{
     color:  hwb(327 19% 53%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
     text-align: center;
-    font-weight: 600;
 }
 
 #resultado{
