@@ -5,7 +5,6 @@ const produtos = [
 "Camiseta Algodão", "Calça Jeans", "Tênis Esportivo", "Relógio de Pulso", "Mochila Escolar", "Fone de Ouvido", "Garrafa Térmica", "Jaqueta Corta-Vento", "Boné Aba Reta", "Óculos de Sol", "Carteira de Couro", "Cinto Social", "Meia Cano Alto", "Moletom com Capuz", "Bermuda Cargo", "Camisa Polo", "Sapato Social", "Chinelo de Dedo", "Perfume Importado", "Creme Hidratante", "Shampoo Anticaspa", "Protetor Solar", "Escova de Dentes", "Toalha de Banho", "Travesseiro Nasa", "Luminária de Mesa", "Teclado Mecânico", "Mouse Sem Fio", "Mousepad Gamer", "Carregador Portátil", "Caixa de Som Bluetooth", "Cabo HDMI", "Suporte para Notebook", "Pendrive 64GB", "Smartwatch", "Agenda 2026", "Caneta Esferográfica", "Caderno Universitário", "Pasta Executiva", "Organizador de Cabos", "Caneca de Cerâmica", "Garrafa de Vidro", "Avental de Cozinha", "Jogo de Facas", "Fradeira Elétrica", "Jogo de Chaves", "Trena Métrica", "Lanterna LED", "Cadeado de Latão", "Mala de Viagem"
 ];
 
-
 function mostrarProdutos(){
     
 }
@@ -27,6 +26,7 @@ function array00(){
 //     console.log("Idade: " + idades[i]);
 
 // }
+
 for(let i=0; i<idades.length; i++){
 console.log("Idade: " + idades[i]);
 }
