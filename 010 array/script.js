@@ -1,61 +1,82 @@
-let idades = [18,20,12,35,14,15,38,88,99]
-let precos = []
-
-const produtos = [
-"Camiseta Algodão", "Calça Jeans", "Tênis Esportivo", "Relógio de Pulso", "Mochila Escolar", "Fone de Ouvido", "Garrafa Térmica", "Jaqueta Corta-Vento", "Boné Aba Reta", "Óculos de Sol", "Carteira de Couro", "Cinto Social", "Meia Cano Alto", "Moletom com Capuz", "Bermuda Cargo", "Camisa Polo", "Sapato Social", "Chinelo de Dedo", "Perfume Importado", "Creme Hidratante", "Shampoo Anticaspa", "Protetor Solar", "Escova de Dentes", "Toalha de Banho", "Travesseiro Nasa", "Luminária de Mesa", "Teclado Mecânico", "Mouse Sem Fio", "Mousepad Gamer", "Carregador Portátil", "Caixa de Som Bluetooth", "Cabo HDMI", "Suporte para Notebook", "Pendrive 64GB", "Smartwatch", "Agenda 2026", "Caneta Esferográfica", "Caderno Universitário", "Pasta Executiva", "Organizador de Cabos", "Caneca de Cerâmica", "Garrafa de Vidro", "Avental de Cozinha", "Jogo de Facas", "Fradeira Elétrica", "Jogo de Chaves", "Trena Métrica", "Lanterna LED", "Cadeado de Latão", "Mala de Viagem"
+const nomes = [
+  "Lúcio Fernando",
+  "Rivaldo Jesus",
+  "Mônica",
+  "Capitão Ganso",
+  "Peba",
+  "Gill Bates",
+  "Dona Bete",
+  "Kowalski",
+  "Heitor Tuga",
+  "Junin",
+  "Padre Ernan Buco",
+  "GENéZio",
+  "Bilu",
+  "Waldisney",
+  "Tião"
 ];
 
-function mostrarProdutos(){
+const dias_da_semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+const copia_semana = []
+
+let produtos = ["Meia", "Pá de Corte", "Suco de manga", "Leite"]
+let precos = [666, 777, 12, 4]
+
+function inverter_array(){
+  let removido = dias_da_semana.pop(7)
+  copia_semana.push(removido)
+
+  console.log(dias_da_semana)
+  console.log
+}
+
+function ver_produtos(){
+  
+  for(let i = 0; i < produtos.length; i++){
+    let j = i + 1
+    document.getElementById("lista_produtos").innerHTML += "<p>" + j + "°: " + produtos[i] + "</p>"
+  }
+}
+
+function ver_produtos_e_precos(){
+
+  document.getElementById("lista_produtos").innerHTML = ""
+  for(let i = 0; i < produtos.length; i++){
+    let j = i + 1
+    document.getElementById("lista_produtos").innerHTML += "<p>" + j + "°: " + produtos[i] + " - R$" + 
+    precos[i].toFixed(2).replace(".",",") + "</p>"
+  }
+}
+
+function remover_ultimo_produto(){
+  produtos.pop()
+  precos.pop()
+}
+
+function aumentar_preco_300_porcento(){
+  for(i = 0; i < produtos.length; i++){
+    precos[i] *= 4
+  }
+}
+
+function adicionar_produto(){
+  let nome_produto
+  let preco_produto = 0
+
+    do{
+      nome_produto = prompt("Nome do produto:")
+    }while(nome_produto === "" ||  !isNaN(nome_produto))
+
+    do{
+      preco_produto = Number(prompt("Preço do produto:"))
+          
+    }while(preco_produto <= 0)
+        
+        
     
-}
+  produtos.push(nome_produto)
+  precos.push(preco_produto)
 
-function array00(){
+  ver_produtos_e_precos()
 
-// let i = 14
-// console.log("Idade: " + idades[i]);
-
-// console.log(idades.length);
-// console.log("Idade: " + idades[0]);
-// console.log("Idade: " + idades[1]);
-// console.log("Idade: " + idades[2]);
-// console.log("Idade: " + idades[3]);
-// console.log("Idade: " + idades[4]);
-// console.log("Idade: " + idades[5]);
-    
-// for(let i=0; i<6; i++){
-//     console.log("Idade: " + idades[i]);
-
-// }
-
-for(let i=0; i<idades.length; i++){
-console.log("Idade: " + idades[i]);
-}
-}
-
-function addPrecos(){
-let n = Math.ceil(Math.random() * 100)
-
-precos.push(n)
-
-// console.log(precos);
-
-document.getElementById('lista-precos').innerHTML = ''
-for(let i=0; i<precos.length; i++){
-console.log(precos[i]);
-document.getElementById('lista-precos').innerHTML += precos[i] + ' - ' 
-}
-}
-
-function sortearAluno(){
-const alunos = [
-  "Adriano", "Alisson", "Athos", "Beatriz", "Camilla", 
-  "Cauê", "Daniel", "Diego", "Enzo", "Erick", 
-  "Felipe", "Fernando", "Francisca", "Gabriel", "Guilherme", 
-  "Gustavo", "Hizabele", "Ildo", "Isadora", "Jean", 
-  "Jeniffer", "Joás", "José", "Julia", "Kauan", 
-  "Luanna", "Luciano", "Luiz", "Marcos", "Mariom", 
-  "Mattheus", "Ruhan", "Silvano", "Vinícius"
-];
-
-console.log(alunos[Math.floor(Math.random()*alunos.length)])
 }
