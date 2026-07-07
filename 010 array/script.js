@@ -26,9 +26,9 @@ function arrays(){
     array.push()//adiciona dentro do array
     idades.length // quantidade de elementos dentro do array
 
-    for(let i = 0; i < idades.length; i++)
-    ===
-    for(let i = 0; i < 6; i++)
+    // for(let i = 0; i < idades.length; i++)
+    // ===
+    // for(let i = 0; i < 6; i++)
 }
 
 
