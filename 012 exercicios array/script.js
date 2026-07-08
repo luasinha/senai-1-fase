@@ -15,7 +15,7 @@ function exercicio2() {
 function exercicio3() {
     let dias = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
 
-    dias.push('Feriado');
+    dias.push('Halloween!');
 
     console.log(dias);
 }
