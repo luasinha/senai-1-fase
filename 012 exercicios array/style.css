@@ -1,0 +1,38 @@
+body{
+   background: linear-gradient(45deg,oklch(65.587% 0.127 144.821), oklch(72.41% 0.0774 184.946));
+    color: lch(45.39% 68.83 320.22);
+    font-size: larger;
+    text-shadow: 0 0 10px lab(56.48% 45.77 -9.97), 0 0 30px rgba(255,140,220,.7), 0 0 60px rgba(180,120,255,.6);
+    text-align: center;
+}
+
+h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+output{
+    color:  lab(53.12% -26.65 27.49);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#resultado{
+    background-color: lab(100% 0.01 -0.01);
+}
+
+button{
+    background: linear-gradient(45deg, hsl(184, 58%, 52%),#a441e6);
+    color: lch(38.37% 27.14 55.01);
+    border-radius: 50px;
+    padding: 7px 30px;
+    border: none;
+    font-size: 18px;
+    font-weight:600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+button:hover{
+    transform: scale(1.08);
+    background-color: oklab(76.179% -0.12434 0.10566);
+}
