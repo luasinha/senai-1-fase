@@ -32,7 +32,7 @@ function exercicio5() {
     let pares = [];
 
     for (let i = 2; i <= 20; i += 2) {
-        pares.push(i);
+    pares.push(i);
     }
 
     console.log(pares);
