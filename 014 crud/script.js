@@ -40,11 +40,16 @@ limparFormulario()
 
 
 function limparFormulario(){
+
 document.getElementById('input-nome').value = ''
 document.getElementById('input-altura').value = ''
 document.getElementById('input-cor').value = ''
 document.getElementById('input-custo').value= ''
 
+document.getElementById('input-nome').focus()
+document.getElementById('input-altura').focus()
+document.getElementById('input-cor').focus()
+document.getElementById('input-custo').focus()
 }
 
 
