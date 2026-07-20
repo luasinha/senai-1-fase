@@ -12,10 +12,8 @@
 <h1> CRUD </h1>
 </header>
 
-
 <div id="form">
    
-
     <div class="container-inputs">
        <label for="">Nome:</label>
         <input id="input-nome" type="text">
@@ -37,22 +35,26 @@
     </div>
 
 </div>
+
+<button onclick="cadastrarDino()">cadastrar</button>
+<button onclick="salvarDino()">salvar</button>
+<button onclick="excluirDino()">excluir</button>
+
+<br>
+
+<hr>
+<button onclick="mostrarTodos()">mostrar todos os dinos</button>
 <button onclick="testar()">teste</button>
-<button onclick="cadastrarDino()">+</button>
-
+<button onclick="pesquisar()">pesquisar</button>
 <br>
 
-<hr>
-<button onclick="mostrarTodos">mostrar todos os dinos</button>
-<br>
-
-<div id="painelDinos">
-    
-</div>
-<hr>
-
+    <div id="painel-dinos">
+        tem nada dentro
+    </div>
 
     
+<hr>
+
     <script src="script.js"></script>
 </body>
 </html>
